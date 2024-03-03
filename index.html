@@ -11,13 +11,14 @@
       <div class="container__logo">
         <img src="./assets/Frame 6.png" alt="Logo da Alura" />
       </div>
-      <div class="container__input">
+      <section class="container__input">
         <textarea
-          class="text__area"
-          cols="29"
-          rows="12"
+          id="input"
+          class="container__input__textArea"
+          cols="auto"
+          rows="8"
           placeholder="Digite seu texto"
-        ></textarea>
+        /></textarea>
         <div class="container__input__tip__buttons">
           <div class="tip">
             <img
@@ -31,19 +32,32 @@
             <button class="button__outlined">Descriptografar</button>
           </div>
         </div>
-      </div>
-      <div class="container__output">
-        <img
-          src="./assets/High quality products 1 1.svg"
-          alt="Pessoa segurando uma lupa"
-        />
-        <div class="container__output__text">
-          <h2>Nenhuma mensagem encontrada</h2>
-          <p>
-            Digite um texto que você deseja criptografar ou descriptografar.
-          </p>
+      </section>
+      <section class="container__output">
+        <div class="container__output__noMessage">
+          <div class="container__output__noMessage__img">
+          <img
+            src="./assets/High quality products 1 1.svg"
+            alt="Pessoa segurando uma lupa"
+          />
+          </div>
+          <div class="container__output__noMessage__text">
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
         </div>
-      </div>
+        <div class="container__output__withMessage">
+          <textarea 
+            id="output" 
+            class="container__output__withMessage__textArea" 
+            cols="auto" 
+            rows="8"/></textarea>
+          <button class="button__outlined">Copiar</button>
+
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container__footer">
