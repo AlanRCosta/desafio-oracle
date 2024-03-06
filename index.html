@@ -13,7 +13,7 @@
       </div>
       <section class="container__input">
         <textarea
-          id="input"
+          id="inputText"
           class="container__input__textArea"
           cols="auto"
           rows="8"
@@ -28,13 +28,13 @@
             <p>apenas letras minúsculas e sem acento.</p>
           </div>
           <div class="buttons">
-            <button class="button__contained">Criptografar</button>
-            <button class="button__outlined">Descriptografar</button>
+            <button class="button__contained" onclick="mostrarValor()">Criptografar</button>
+            <button class="button__outlined" onclick="stateChange()">Descriptografar</button>
           </div>
         </div>
       </section>
       <section class="container__output">
-        <div class="container__output__noMessage">
+        <div class="container__output__noMessage" id="noMessage">
           <div class="container__output__noMessage__img">
           <img
             src="./assets/High quality products 1 1.svg"
@@ -48,13 +48,13 @@
             </p>
           </div>
         </div>
-        <div class="container__output__withMessage">
+        <div class="container__output__withMessage" id="withMessage">
           <textarea 
-            id="output" 
-            class="container__output__withMessage__textArea" 
+            id="outputText" 
+            class="container__output__withMessage__textArea"
             cols="auto" 
             rows="8"/></textarea>
-          <button class="button__outlined">Copiar</button>
+          <button class="button__outlined" onclick="copy()">Copiar</button>
 
         </div>
       </section>
@@ -73,5 +73,6 @@
         </a>
       </div>
     </footer>
+    <script src="./scripts/home.js"></script>
   </body>
 </html>

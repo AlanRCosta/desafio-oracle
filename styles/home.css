@@ -140,7 +140,6 @@ button {
   display: flex;
 }
 .container__output__noMessage {
-  /* display: none; */
   display: flex;
   gap: 32px;
   align-items: center;
@@ -173,7 +172,6 @@ button {
 
 .container__output__withMessage {
   width: 100%;
-  /* display: flex; */
   display: none;
   flex-direction: column;
   justify-content: space-between;
