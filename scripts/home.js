@@ -1,11 +1,10 @@
-const mostrarValor = () => {
+const getValue = () => {
   let inputValue = document.getElementById("inputText").value;
-  inputValue.length ? console.log("sim") : console.log("não");
 
   stateChange(inputValue);
 };
 
-const copy = () => {
+const copyText = () => {
   document.querySelector("#outputText").select();
   document.execCommand("copy");
 };
