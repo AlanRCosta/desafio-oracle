@@ -43,10 +43,6 @@ body {
   justify-content: space-between;
 }
 
-.container__logo {
-  /* width: 10%; */
-}
-
 .container__input {
   width: 680px;
   margin-top: 80px;
@@ -199,5 +195,25 @@ footer {
   gap: 16px;
 }
 
-@media screen {
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container__input {
+    width: 100%;
+  }
+
+  .container__output {
+    width: auto;
+  }
+
+  .container__output__noMessage__img {
+    display: none;
+  }
+
+  .container__output__noMessage {
+    width: 100%;
+  }
 }

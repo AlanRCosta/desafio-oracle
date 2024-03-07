@@ -25,7 +25,13 @@ const stateChange = (text) => {
   }
 };
 
-const encryptAndDecrypt = (text, conditions, substitutions) => {
+const copyText = () => {
+  document.querySelector("#outputText").select();
+  document.execCommand("copy");
+  document.getElementById("inputText").value = "";
+};
+
+const encryptOrDecrypt = (text, conditions, substitutions) => {
   let modifiedText = "";
 
   if (
@@ -59,11 +65,7 @@ const encryptText = () => {
     4: "ufat",
   };
 
-  const encryptedText = encryptAndDecrypt(
-    inputValue,
-    conditions,
-    substitutions
-  );
+  const encryptedText = encryptOrDecrypt(inputValue, conditions, substitutions);
 
   stateChange(inputValue);
 
@@ -76,19 +78,9 @@ const decryptText = () => {
   const conditions = { 0: "enter", 1: "imes", 2: "ai", 3: "ober", 4: "ufat" };
   const substitutions = { 0: "e", 1: "i", 2: "a", 3: "o", 4: "u" };
 
-  const decryptedText = encryptAndDecrypt(
-    inputValue,
-    conditions,
-    substitutions
-  );
+  const decryptedText = encryptOrDecrypt(inputValue, conditions, substitutions);
 
   stateChange(inputValue);
 
   document.getElementById("outputText").value = decryptedText;
-};
-
-const copyText = () => {
-  document.querySelector("#outputText").select();
-  document.execCommand("copy");
-  document.getElementById("inputText").value = "";
 };
