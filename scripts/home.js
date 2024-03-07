@@ -1,4 +1,4 @@
-const isValidString = (string) => /^[a-z\s]+$/.test(string);
+const isValidString = (string) => /^[a-z\s.,;:!?]+$/.test(string);
 
 const getInputValue = () => document.getElementById("inputText").value;
 
