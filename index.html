@@ -25,11 +25,13 @@
               src="./assets/bi_exclamation-circle-fill.png"
               alt="Ponto de Exclamação"
             />
-            <p>apenas letras minúsculas e sem acento.</p>
+            <div id="tipText">
+              <p>apenas letras minúsculas e sem acento.</p>
+            </div>
           </div>
           <div class="buttons">
-            <button class="button__contained" onclick="getValue()">Criptografar</button>
-            <button class="button__outlined" onclick="">Descriptografar</button>
+            <button class="button__contained" onclick="encryptText()">Criptografar</button>
+            <button class="button__outlined" onclick="decryptText()">Descriptografar</button>
           </div>
         </div>
       </section>
