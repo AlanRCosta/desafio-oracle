@@ -6,14 +6,11 @@ const stateChange = (text) => {
   const isValid = isValidString(text);
 
   if (isValid) {
-    document.getElementById("tipText").style.color = "#495057";
-    document.getElementById("tipText").style.fontSize = "0.75rem";
-    document.getElementById("tipText").style.fontWeight = "400";
+    document.getElementById("tip").style.display = "flex";
+    document.getElementById("tipError").style.display = "none";
   } else {
-    document.getElementById("tipText").style.color = "#C51921";
-    document.getElementById("tipText").style.fontWeight = "bold";
-    document.getElementById("tipText").style.fontSize = "0.9rem";
-    document.getElementById("inputText").value = "";
+    document.getElementById("tip").style.display = "none";
+    document.getElementById("tipError").style.display = "flex";
   }
 
   if (text.length && isValid) {

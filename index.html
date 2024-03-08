@@ -9,7 +9,7 @@
   <body>
     <main class="container">
       <div class="container__logo">
-        <img src="./assets/Vector.svg" alt="Logo da Alura" />
+        <img src="./assets/Logo.svg" alt="Logo da Alura" />
       </div>
       <section class="container__input">
         <textarea
@@ -20,12 +20,21 @@
           placeholder="Digite seu texto"
         /></textarea>
         <div class="container__input__tip__buttons">
-          <div class="tip">
+          <div class="tip" id="tip">
             <img
-              src="./assets/bi_exclamation-circle-fill.png"
+              src="./assets/ExclamationCircle.svg"
               alt="Ponto de Exclamação"
             />
-            <div id="tipText">
+            <div>
+              <p>apenas letras minúsculas e sem acento.</p>
+            </div>
+          </div>
+          <div class="tipError" id="tipError">
+            <img
+              src="./assets/ExclamationCircleError.svg"
+              alt="Ponto de Exclamação"
+            />
+            <div>
               <p>apenas letras minúsculas e sem acento.</p>
             </div>
           </div>
@@ -39,7 +48,7 @@
         <div class="container__output__noMessage" id="noMessage">
           <div class="container__output__noMessage__img">
           <img
-            src="./assets/High quality products 1 1.svg"
+            src="./assets/HighQualityProducts.svg"
             alt="Pessoa segurando uma lupa"
           />
           </div>

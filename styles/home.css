@@ -20,6 +20,7 @@
   --gray-500: #343a40;
 
   --white: #ffffff;
+  --error: #c51921;
 
   --primary-font: "Inter", sans-serif;
   --secondary-font: "Montserrat", sans-serif;
@@ -86,6 +87,16 @@ textarea:focus-visible {
   font-weight: 400;
   font-size: 0.75rem;
   color: var(--gray-400);
+  gap: 8px;
+}
+
+.tipError {
+  display: none;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--error);
   gap: 8px;
 }
 
