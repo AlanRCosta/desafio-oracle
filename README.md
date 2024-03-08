@@ -10,8 +10,9 @@
 <h2 id="layout">🎨 Layout</h2>
 
 <p align="center">
-    <img src="" alt="Image Example" width="400px">
-    <img src="" alt="Image Example" width="400px">
+    <img src="./assets/Screenshot_1.jpg" alt="Layout Example" width="400px">
+    <img src="./assets/Screenshot_2.jpg" alt="Layout Example" width="400px">
+    <img src="./assets/Screenshot_3.jpg" alt="Layout Example" width="400px">
 </p>
 
 <h2 id="technologies">💻 Tecnologias</h2>
